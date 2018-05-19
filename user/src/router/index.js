@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import New from '@/components/New'
 import UpDate from '@/components/UpDate'
+import Login from '@/components/Login'
 
 
 Vue.use(Router)
@@ -23,6 +24,11 @@ export default new Router({
       path: '/update/:id',
       name: 'UpDate',
       component: UpDate
+    },
+    {
+      path: '/',
+      name: 'Login',
+      component: Login
     }
   ]
 })
